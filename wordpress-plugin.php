@@ -3,7 +3,7 @@
 Plugin Name: wordpress-plugin
 Plugin URI: https://github.com/sithiAslinah/wordPress-plugin
 Description: Semi-automated test for the GitHub Plugin Updater
-Version: 1.0.0
+Version: 2.0.0
 License: GPLv2
 */
 
