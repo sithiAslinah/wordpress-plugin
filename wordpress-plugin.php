@@ -40,19 +40,20 @@ function github_plugin_updater_test_init() {
 
 	if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
 
-		$config = array(
+			$config = array(
 			'slug' => plugin_basename( __FILE__ ),
 			'proper_folder_name' => 'github-updater',
 			'api_url' => 'https://api.github.com/repos/sithiAslinah/wordpress-plugin',
-			'raw_url' => 'https://github.com/sithiAslinah/wordpress-plugin/master',
+			'raw_url' => 'https://github.com/sithiAslinah/wordpress-plugin.git',
 			'github_url' => 'https://github.com/sithiAslinah/wordpress-plugin',
-			'zip_url' => 'https://github.com/sithiAslinah/wordpress-plugin/archive/master.zip',
+			'zip_url' => 'https://github.com/sithiAslinah/wordpress-plugin/archive/refs/heads/main.zip',
 			'sslverify' => true,
 			'requires' => '3.0',
 			'tested' => '3.3',
 			'readme' => 'README.md',
 			'access_token' => '',
 		);
+
 
 		new WP_GitHub_Updater( $config );
 
